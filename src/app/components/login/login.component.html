@@ -1,0 +1,102 @@
+<!-- 
+
+	<div class="container-fluid">
+		<div class="row main-content bg-success text-center">
+			<div class="col-md-4 text-center company__info">
+				<span class="company__logo"><h2><span class="fa fa-android"></span></h2></span>
+				<h4 class="company_title">University of Palestine</h4>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="">
+			</div>
+			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+				<div class="container-fluid">
+					<div class="row">
+						<h2>Log In</h2>
+					</div>
+					<div class="row">
+						<form control="" [formGroup]="loginForm" (submit)="login()"  class="form-group">
+							<div class="row">
+								<input type="text" formControlName="username" id="username" class="form__input" placeholder="Username">
+							</div>
+							<div class="row">
+							
+								<input type="password" formControlName="password" id="password" class="form__input" placeholder="Password">
+							</div>
+							<div class="row">
+								<input type="checkbox" formControlName="remember_me" id="remember_me" class="">
+								&nbsp;
+								<label for="remember_me">Remember Me!</label>
+							</div>
+							<div class="row">
+								<input type="submit" value="Submit" class="btn">
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<p>Don't have an account? <a routerLink="/sign-up">Register Here</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	
+	
+
+
+<!-- <p>login works!</p> -->
+
+<div class="container">
+	<section class="vh-100" style="background-color: rgba(3, 3, 8, 0.561);">
+		<div class="container py-5 h-100">
+		  <div class="row d-flex justify-content-center align-items-center h-100">
+			<div class="col col-xl-10">
+			  <div class="card" style="border-radius: 3rem;">
+				<div class="row g-0">
+				  <!-- <div class="col-md-6 col-lg-5 d-none d-md-block">
+					<img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_640.jpg"
+					  alt="login form" class="img-fluid"  />
+				  </div> -->
+				  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+					<div class="card-body p-4 p-lg-5 text-black">
+	  
+					  <form [formGroup] = "loginForm" (submit)="login()" >
+	  
+						<div class="d-flex align-items-center mb-3 pb-1">
+						  <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+						  <span class="h1 fw-bold mb-0">BSMMU</span>
+						</div>
+	  
+						<h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log into your account</h5>
+	  
+						<div class="form-outline mb-4">
+						  <input type="text" formControlName="username" id="form2Example17" class="form-control form-control-lg" />
+						  <label class="form-label" for="form2Example17">User Name</label>
+						</div>
+	  
+						<div class="form-outline mb-4">
+						  <input type="password" formControlName="password" id="form2Example27" class="form-control form-control-lg" />
+						  <label class="form-label" for="form2Example27">Password</label>
+						</div>
+	  
+						<div class="pt-1 mb-4">
+						  <button class="btn btn-dark btn-lg btn-block"  type="submit">Log In</button>
+						</div>
+	  
+						<a class="small text-muted" href="#!">Forgot password?</a>
+						<p class="mb-5 pb-lg-2" style="color: #b7360a;">Don't have an account? <a routerLink="/signup"
+							style="color: #b7360a;">Register here</a></p>
+						<a href="#!" class="small text-muted">Terms of use.</a>
+						<a href="#!" class="small text-muted">Privacy policy</a>
+					  </form>
+	  
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>   
+</div>
+
+  
+  

@@ -1,0 +1,41 @@
+<div class="container">
+    <h1>Create Patients Diagnosis Report</h1>
+    <form class="row g-3" [formGroup]="patientDiagnosisHistoryForm" (ngSubmit)="onSubmit()">
+        <div class="form-group col-12">
+            <label for="patient_ID" class="form-label">Patient ID</label>
+            <input type="number" formControlName="patient_ID" class="form-control" id="patient_ID" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="status" class="form-label">Status</label>
+            <input type="text" formControlName="status" class="form-control" id="status">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="diagnosisDate" class="form-label">Diagnosis Date</label>
+            <input type="date" formControlName="diagnosisDate" class="form-control" id="diagnosisDate">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="diagnosisDetails" class="form-label">Diagnosis Details</label>
+            <input type="text" formControlName="diagnosisDetails" class="form-control" id="diagnosisDetails">
+        </div>
+        <div class="form-group col-12">
+            <label for="diagnosisCode" class="form-label">Diagnosis Code</label>
+            <input type="number" formControlName="diagnosisCode" class="form-control" id="diagnosisCode" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="diagnosisResult" class="form-label">Diagnosis Result</label>
+            <input type="text" formControlName="diagnosisResult" class="form-control" id="diagnosisResult">
+        </div>
+        <div class="form-group col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
+

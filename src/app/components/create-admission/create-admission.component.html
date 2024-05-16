@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>New Admission Information</h1>
+    <form class="row g-3">
+        <div class="form-group col-12">
+            <label for="patient_ID" class="form-label">Patient ID</label>
+            <input type="number" formControlName="patient_ID" class="form-control" id="patient_ID" placeholder="">
+        </div>
+        <div class="form-group col-12">
+            <label for="admissionDate" class="form-label">Admission Date</label>
+            <input type="date" formControlName="admissionDate" class="form-control" id="admissionDate" placeholder="">
+        </div>
+        <div class="form-group col-12">
+            <label for="dischargeDate" class="form-label">Discharge Date</label>
+            <input type="date" formControlName="dischargeDate" class="form-control" id="dischargeDate" placeholder="">
+        </div>
+        <div class="form-group col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Confirm</button>
+        </div>
+    </form>
+</div>

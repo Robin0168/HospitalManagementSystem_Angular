@@ -1,0 +1,106 @@
+<div class="container">
+  <h1>Update Doctor Information</h1>
+  <form class="row g-3" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group col-12">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" formControlName="name" class="form-control" id="name" placeholder="">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="mobile" class="form-label">Mobile</label>
+      <input type="number" formControlName="mobile" class="form-control" id="mobile">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="phone" class="form-label">Phone</label>
+      <input type="number" formControlName="phone" class="form-control" id="phone">
+    </div>
+    <div class="form-group col-12">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" formControlName="email" class="form-control" id="email" placeholder="">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="visit_price" class="form-label">Visit Price</label>
+      <input type="number" formControlName="visit_price" class="form-control" id="visit_price" placeholder="">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="followupprice" class="form-label">Followup Price</label>
+      <input type="number" formControlName="followup_price" class="form-control" id="followupprice">
+    </div>
+    <!-- <div class="col-md-1">
+      <label for="inputState" class="form-label">Department</label>
+      <select id="inputState" class="form-select">
+        <option selected>Select Department</option>
+        <option value="1">Ortopedics</option>
+        <option value="2">Medicine</option>
+        <option value="3">ENT</option>
+      </select>
+    </div> -->
+    <div class="col-md-4">
+      <label for="department_id" class="form-label">Department Id</label>
+      <input type="text" formControlName="department_id" class="form-control" id="department_id">
+    </div>
+    <div class="col-12">
+      <label for="note" class="form-label">Note</label>
+      <input type="text" formControlName="note" class="form-control" id="note">
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Confirm</button>
+    </div>
+  </form>
+</div>
+
+<!-- <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="name">Name</label>
+
+      <input type="text" formControlName="name" class="form-control" id="name"
+        placeholder="">
+
+    </div>
+    <div class="form-group col-md-6">
+      <label for="email">Email</label>
+
+      <input type="email" formControlName="email" class="form-control" id="email"
+        placeholder="">
+
+    </div>
+    <div class="form-group col-md-6">
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" class="form-control" id="password"
+        placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" formControlName="phone" id="phone" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" formControlName="address" id="address"
+      placeholder="">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="department">Department</label>
+      <input type="text" class="form-control" formControlName="department" id="department">
+    </div>
+  
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" formControlName="gridCheck" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>  -->

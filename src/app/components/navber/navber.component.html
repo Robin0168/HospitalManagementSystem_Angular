@@ -1,0 +1,127 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Departments</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/createDepartment">Add New</a>
+          <a class="dropdown-item" routerLink="/departments">Departments</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Doctors</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/createDoctor">Add New</a>
+          <a class="dropdown-item" routerLink="/doctors">Doctors</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Patients</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/patients">Patients</a>
+          <a class="dropdown-item" routerLink="/medicalRecords">Medical Record</a>
+          <a class="dropdown-item" routerLink="/medicalHistory">Medical History</a>
+          <a class="dropdown-item" routerLink="/patientDiagnosis">Diagnosis Reports</a>
+          <a class="dropdown-item" routerLink="/followups">Follow Up History</a>
+          <a class="dropdown-item" routerLink="/patientSubscribedInsurances">Insurance Subscribed</a>
+          <a class="dropdown-item" routerLink="/emergencyContactPerson">Emergency Contact Person</a>
+          <a class="dropdown-item" routerLink="/patientBillPaymentRecord">Bill Payment History</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Bill</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/createBill">Create New Bill</a>
+          <a class="dropdown-item" routerLink="/bill">Patients Bill</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Insurance</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/newInsurance">New Insurance</a>
+          <a class="dropdown-item" routerLink="/availableHealthInsurances">Available Health Insurances</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Diagnosis</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/newHospitalDiagnosisInformation">New Diagnosis Information </a>
+          <a class="dropdown-item" routerLink="/hospitalDiagnosisList">Hospital Diagnosis List</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Admission</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/createAdmission">New Admission</a>
+          <a class="dropdown-item" routerLink="/admissions">Admissions</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Appointment</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/bookAnAppointment">Book an appointment</a>
+          <a class="dropdown-item" routerLink="/appointments">Appointments</a>
+        </div>
+      </li>
+   
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Monitoring</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/payment">Payments</a>
+          <a class="dropdown-item" routerLink="/bed">Bed Status</a>
+          <a class="dropdown-item" routerLink="/bloodBank">Blood Bank</a>
+          <a class="dropdown-item" routerLink="/medicine">Medicine</a>
+        </div>
+      </li> -->
+    </ul>
+    <a class="navbar-brand" routerLink="//signup">CreateAccount</a>
+    <form class="form-inline my-2 my-lg-0">
+      <a class=" my-2 my-sm-0">{{username | uppercase }}</a> &nbsp;&nbsp;
+      <button class="btn btn-dark my-2 my-sm-0" type="button" (click)="logOut()">Log Out</button>
+    </form>
+  </div>
+</nav>
+<br><br>
+
+<!-- <a class="navbar-brand" routerLink="//signup">CreateAccount</a> -->
+<!-- <li class="nav-item dropdown" *ngIf="userRole=='admin'">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          EmployeeRegistration</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/add">Doctor Registration</a>
+          <a class="dropdown-item" routerLink="/nr">Nurse Registration</a>
+        </div>
+      </li> -->
+
+<!-- <li class="nav-item dropdown" *ngIf="userRole=='admin'">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          monitor hospital</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/appointment">view appointment</a>
+          <a class="dropdown-item" routerLink="/payment">view payment</a>
+          <a class="dropdown-item" routerLink="/bed">view bed status</a>
+         
+          <a class="dropdown-item" routerLink="/blood">view blood bank</a>
+          <a class="dropdown-item" routerLink="/medicine">view medicine</a>
+        </div>
+      </li> -->

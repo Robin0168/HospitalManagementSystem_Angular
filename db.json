@@ -1,0 +1,171 @@
+{
+  "posts": [
+    {
+      "id": "f072",
+      "name": "nddd",
+      "email": "dddd",
+      "password": "dddd",
+      "phone": "ddd",
+      "address": "ddd",
+      "department": "ddd",
+      "gridCheck": true
+    },
+    {
+      "id": "2dbc",
+      "name": "hasanat",
+      "email": "Hasnat@gmail.com",
+      "password": "cxvbv",
+      "phone": "123",
+      "address": "Dhaka",
+      "department": "dept",
+      "gridCheck": true
+    },
+    {
+      "id": "3491",
+      "name": "Sinan Tajwar",
+      "email": null,
+      "password": "",
+      "phone": "",
+      "address": "",
+      "department": "",
+      "gridCheck": ""
+    },
+    {
+      "id": "7d05",
+      "name": "Rumaisa islam",
+      "email": null,
+      "password": "",
+      "phone": "",
+      "address": "",
+      "department": "",
+      "gridCheck": ""
+    },
+    {
+      "id": "fa01",
+      "name": "Nur Ahmed",
+      "email": null,
+      "password": "",
+      "phone": "",
+      "address": "",
+      "department": "Teaching",
+      "gridCheck": ""
+    },
+    {
+      "id": "a119",
+      "name": "Tofail Ahmed",
+      "email": null,
+      "password": "",
+      "phone": "",
+      "address": "",
+      "department": "",
+      "gridCheck": ""
+    }
+  ],
+  "auth": [
+    {
+      "id": "c960",
+      "username": "aaa",
+      "password": "aaa",
+      "email": "aaa",
+      "role": "employee"
+    },
+    {
+      "id": "a34b",
+      "username": "aaaa",
+      "password": "aaaa",
+      "email": "aaaa",
+      "role": "employee"
+    },
+    {
+      "id": "ce8e",
+      "username": "bbb",
+      "password": "bbb",
+      "email": "bbb",
+      "role": "admin"
+    },
+    {
+      "id": "4615",
+      "username": "vvvv",
+      "password": "vvvv",
+      "email": "vvvv",
+      "role": "admin"
+    },
+    {
+      "id": "c069",
+      "username": "uu",
+      "password": "uu",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "e61a",
+      "username": "oo",
+      "password": "oo",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "cd9d",
+      "username": "bbb",
+      "password": "bbb",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "898f",
+      "username": "hasanat",
+      "password": "hasanat",
+      "email": null,
+      "role": "admin"
+    },
+    {
+      "id": "9c54",
+      "username": "nazmul",
+      "password": "nazmul",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "8e51",
+      "username": "ha",
+      "password": "ha",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "7525",
+      "username": "x",
+      "password": "x",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "7897",
+      "username": "q",
+      "password": "q",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "a469",
+      "username": "y",
+      "password": "y",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "973c",
+      "username": "new",
+      "password": "new",
+      "email": null,
+      "role": "employee"
+    },
+    {
+      "id": "610e",
+      "username": "Abu Tadim",
+      "password": "abdullah",
+      "email": null,
+      "role": "employee"
+    }
+  ]
+}

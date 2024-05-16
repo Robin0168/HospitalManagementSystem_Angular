@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Add Follow Up Information</h1>
+    <form class="row g-3" [formGroup]="patientFollowupHistoryForm" (ngSubmit)="onSubmit()">
+        <div class="form-group col-12">
+            <label for="followupDate" class="form-label">Followup Date</label>
+            <input type="date" formControlName="followupDate" class="form-control" id="followupDate" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="followupNotes" class="form-label">Followup Notes</label>
+            <input type="text" formControlName="followupNotes" class="form-control" id="followupNotes">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="history_ID" class="form-label">History ID</label>
+            <input type="number" formControlName="history_ID" class="form-control" id="history_ID">
+        </div>
+        <div class="form-group col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div> 

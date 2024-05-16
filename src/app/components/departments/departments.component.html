@@ -1,0 +1,118 @@
+
+<!-- <div class="container">
+  <button type="button" routerLink="/createDepartment" class="btn btn-outline-info">New Department</button>
+</div>
+<div class="container">
+  <h2>Hospital Departments</h2>
+    <table class="table table-dark table-hover">
+       
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Second</th>
+                <th scope="col">Third</th>
+                <th scope="col">Last</th>
+                <th scope="col">Action......................................................
+                </th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>
+                  <a type="button" class="btn btn-primary"  >Update</a>
+                  &nbsp;
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  &nbsp;
+                  <button type="button" class="btn btn-outline-info">Details</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>fat</td>
+                <td>Thornton</td>
+             
+                <td>
+                  <a type="button" class="btn btn-primary"  >Update</a>
+                  &nbsp;
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  &nbsp;
+                  <button type="button" class="btn btn-outline-info">Details</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>twitter</td>
+                <td>twitter</td>
+                <td>
+                  <a type="button" class="btn btn-primary"  >Update</a>
+                  &nbsp;
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  &nbsp;
+                  <button type="button" class="btn btn-outline-info">Details</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>twitter</td>
+                <td>twitter</td>
+                <td>
+                  <a type="button" class="btn btn-primary"  >Update</a>
+                  &nbsp;
+                  <button type="button" class="btn btn-danger">Delete</button>
+                  &nbsp;
+                  <button type="button" class="btn btn-outline-info">Details</button>
+                </td>
+              </tr>
+         
+            </tbody>
+       
+      </table>
+  </div> -->
+
+  <div class="container">
+    <button type="button" routerLink="/createDepartment" class="btn btn-outline-info">New Department</button>
+  </div>
+  <div class="container">
+    <h2>Hospital Departments</h2>
+    
+  <table class="table table-dark table-hover">
+    <tr>
+ 
+      <th>Name</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Note</th>
+     
+      <th scope="col">Action..............................................
+      </th>
+     
+    </tr>
+    <tr *ngFor="let department of departmentList">
+  
+      <td>{{ department.name }}</td>
+      <td>{{ department.address }}</td>
+      <td>{{ department.phone}}</td>
+      <td>{{ department.email }}</td>
+      <td>{{ department.note }}</td>
+      <td>
+        <a type="button" class="btn btn-primary" >Update</a>
+        &nbsp;
+        <button type="button" class="btn btn-danger" (click)="delete(department.id)">Delete</button>
+        &nbsp;
+        <button type="button" class="btn btn-outline-info" >Details</button>
+      </td>
+    </tr>
+  </table>  
+  </div>

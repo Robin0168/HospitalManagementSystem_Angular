@@ -1,0 +1,36 @@
+<div class="container">
+  <button type="button" routerLink="/nurseRegistration" class="btn btn-outline-info">Add New</button>
+</div>
+<div class="container">
+  <h2>Nurses Information</h2>
+  
+<table class="table table-dark table-hover">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Salary</th>
+    <th>Batch No</th>
+   
+    <th scope="col">Action..............................................
+    </th>
+   
+  </tr>
+  <tr *ngFor="let nurse of nurseList">
+    <td>{{ nurse.id }}</td>
+    <td>{{ nurse.name }}</td>
+      <td>{{ nurse.address }}</td>
+    <td>{{ nurse.salary }}</td>
+    <td>{{ nurse.batch_no }}</td>
+
+    <td>
+      <a type="button" class="btn btn-primary" [routerLink]="['/updateNurse/', nurse.id]" >Updat</a>
+      &nbsp;
+      <button type="button" class="btn btn-danger" (click)="delete(nurse.id)">Delet</button>
+      &nbsp;
+      <button type="button" class="btn btn-outline-info" (click)="delete(nurse.id)">Detils</button>
+    </td>
+  </tr>
+</table>  
+</div>
+

@@ -1,0 +1,41 @@
+<div class="container">
+  <button type="button" routerLink="/createDoctor" class="btn btn-outline-info">Add New</button>
+</div>
+<div class="container">
+  <h2>Doctors Information</h2>
+  
+<table class="table table-dark table-hover">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Mobile</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Visit Price</th>
+    <th>Followup Price</th>
+    <th>Note</th>
+    <th>Department Id</th>
+    <th scope="col">Action..............................................
+    </th>
+   
+  </tr>
+  <tr *ngFor="let user of userList">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+      <td>{{ user.mobile }}</td>
+    <td>{{ user.phone }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.visit_price }}</td>
+    <td>{{ user.followup_price }}</td>
+    <td>{{ user.note }}</td>
+    <td>{{ user.department_id }}</td>
+    <td>
+      <!-- <a type="button" class="btn btn-primary" [routerLink]="['/updateDoctor/', user.id]" >Updat</a>
+      &nbsp; -->
+      <button type="button" class="btn btn-danger" (click)="delete(user.id)">Delet</button>
+      &nbsp;
+      <button type="button" class="btn btn-outline-info" (click)="delete(user.id)">Detils</button>
+    </td>
+  </tr>
+</table>  
+</div>
